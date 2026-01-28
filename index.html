@@ -1,38 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>WiFi QR Code Generator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Random Quote Generator</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<div class="container">
-    <h2>📶 WiFi QR Code Generator</h2>
+  <div class="quote-container">
+    <h1>💡 Random Quote</h1>
 
-    <input type="text" id="ssid" placeholder="WiFi Name (SSID)" />
+    <p id="quote">Click the button to get inspired!</p>
+    <span id="author"></span>
 
-    <input type="password" id="password" placeholder="WiFi Password" />
+    <button onclick="generateQuote()">New Quote</button>
+  </div>
 
-    <select id="security">
-        <option value="WPA">WPA / WPA2</option>
-        <option value="WEP">WEP</option>
-        <option value="">Open (No Password)</option>
-    </select>
-
-    <button onclick="generateQR()">Generate QR</button>
-
-    <div id="qr-box">
-        <div id="qrcode"></div>
-    </div>
-
-    <button id="downloadBtn" onclick="downloadQR()" style="display:none;">
-        Download QR Code
-    </button>
-</div>
-
-<!-- QR Code Library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
