@@ -1,9 +1,19 @@
-### Link: https://md-sabeel.github.io/Random-Quote-Generator/
+## Link: https://md-sabeel.github.io/Random-Quote-Generator/
 
-Quotable API (no API key required):
+## Quotable API (no API key required):
 👉 https://api.quotable.io/random
 
-### Demo
+## Features
+
+Random quotes on button click
+
+Smooth fade animation
+
+Responsive & clean UI
+
+Easy to extend (add more quotes later)
+
+## Demo
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9678c563-7d86-46ba-9577-a4eff64f219a" />
 
