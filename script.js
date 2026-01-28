@@ -7,7 +7,7 @@ async function generateQuote() {
   authorText.textContent = "";
 
   try {
-    const response = await fetch("http://api.quotable.io/random");
+    const response = await fetch("https://api.quotable.io/random");
     const data = await response.json();
 
     quoteText.textContent = `"${data.content}"`;
