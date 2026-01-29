@@ -20,3 +20,11 @@ async function generateQuote() {
     quoteText.classList.remove("loading");
   }
 }
+window.onload = generateQuote;
+function shareOnTwitter() {
+  const text = `${quoteText.textContent} ${authorText.textContent}`;
+  window.open(
+    `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`,
+    "_blank"
+  );
+}
